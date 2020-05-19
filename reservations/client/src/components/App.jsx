@@ -42,7 +42,7 @@ class App extends React.Component {
 
   getScheduleData() {
     $.ajax({
-      url: '/reservations/2',
+      url: 'http://18.144.79.145:3001/reservations/2',
       success: (data) => {
         this.setData(data);
       },

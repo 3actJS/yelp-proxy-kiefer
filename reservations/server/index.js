@@ -1,7 +1,9 @@
 /* eslint-disable no-console */
 const express = require('express');
 const path = require('path');
+const expressStaticGzip = require('express-static-gzip');
 const db = require('../database/index.js');
+
 
 const app = express();
 
@@ -11,7 +13,11 @@ const publicHTML = path.join(publicFolder, 'index.html');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static(publicFolder));
+app.use(expressStaticGzip(publicFolder));
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
 
 app.listen(3001, () => {
   console.log('Server listening on port 3001!');

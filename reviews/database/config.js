@@ -1,5 +1,5 @@
 module.exports = {
-  host: '172.17.0.7',
+  host: 'reviews_database',
   user: 'root',
   password: 'minji123',
   database: 'yelpreviews',

@@ -1,0 +1,77 @@
+#yelpIconDiv {
+  background-image: url(https://s3-media0.fl.yelpcdn.com/assets/public/default.yelp_design_web.yji-e02121e4b885bf89645bdc9ea402a681.png);
+  min-width: 80px;
+  width: 80px;
+  height: 40px;
+}
+
+#headerx {
+  background-color: #fff;
+  border-bottom: 1px solid #eeeeef;
+  min-width: 960px;
+  padding: 24px 40px 0;
+
+
+}
+
+#header {
+  background-image: url(https://yelp-images-hr.s3-us-west-1.amazonaws.com/header.png);
+  width: 1210px;
+  height: 130px;
+
+}
+
+#headerTop {
+  display: table;
+  table-layout: auto;
+  min-width: 100%;
+
+}
+
+#main-body {
+  width: 100%;
+  min-width: 1184px;
+  display: inline-block;
+}
+
+#restaurant-info {
+  background-image: url(https://yelp-images-hr.s3-us-west-1.amazonaws.com/main-body.png);
+  width: 773px;
+  height: 961px;
+  float: left;
+}
+
+#reservations {
+  margin-left: 12px;
+  margin-bottom: 18px;
+}
+
+#right-nav {
+  float: left;
+  clear: right;
+
+}
+
+#static-right-nav {
+  background-image: url(https://yelp-images-hr.s3-us-west-1.amazonaws.com/right-nav.png);
+  width: 411px;
+  height: 819px;
+}
+
+#collections {
+  background-image: url(https://yelp-images-hr.s3-us-west-1.amazonaws.com/collections.png);
+  width: 1280px;
+  height: 849px;
+  display: inline-block;
+}
+
+#search {
+  min-height: 48px;
+  border-color: #eeeeef;
+  min-width: 375px;
+}
+
+#reviews {
+  display: inline-block;
+
+}

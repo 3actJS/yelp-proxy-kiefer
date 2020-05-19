@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+   yelp_main:
+     build: ./
+     ports:
+      - '3005:3005'
+
+   reservations:
+     build: ./reservations/
+     depends_on:
+      - 'mongo_database'
+     ports:
+      - '3001:3001'
+
+    carousel:
+      build: ./carousel/
+      depends_on:
+        - 'carousel_database'
+      ports:
+        - '3002:3002'
+
+    reviews:
+      build: ./reviews/
+      depends_on:
+        - 'reviews_database'
+      ports:
+        - '3003:3003'
+
+    mongo_database:
+      image: mongo:latest
+
+    reviews_database:
+      image: reviews_data
+
+    carousel_database:
+      image: carousel_data
+
+
